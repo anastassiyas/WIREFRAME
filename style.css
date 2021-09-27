@@ -50,7 +50,7 @@ a {
   .menu__btn {    
     display: flex; /*use flex to center the content*/
     align-items: center;  /* center the content of the button */
-    position: fixed;
+    position: absolute;    
     top: 225px;
     left: 20px;
     width: 26px;
@@ -78,20 +78,22 @@ a {
   }
   /* menu container */
 .menu__box {
-    display: block;
-    position: fixed;
-    visibility: visible;
-    top: 200px;
-    left: -100%;
-    width: 300px;
-    height: 100%;
-    margin: 0;
-    padding: 80px 0;
-    list-style: none;
-    text-align: center;
-    background-color: white;
-    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-  }
+display: block;
+position: sticky;
+position: fixed;
+position: absolute;
+z-index: 100;
+visibility: hidden;
+left: -100%;
+width: 300px;
+height: 100%;
+margin: 0;
+padding: 80px 0;
+list-style: none;
+text-align: center;
+background-color: none;
+box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
   /* menu elements */
   .menu__item {
     display: block;
@@ -117,20 +119,6 @@ a {
     transform: rotate(90deg);
   }
   #menu__toggle:checked ~ .menu__box {
-    visibility: collapse;
-    left: 0;
-  }#menu__toggle:checked ~ .menu__btn > span {
-    transform: rotate(45deg);
-  }
-  #menu__toggle:checked ~ .menu__btn > span::before {
-    top: 0;
-    transform: rotate(0);
-  }
-  #menu__toggle:checked ~ .menu__btn > span::after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-  #menu__toggle:checked ~ .menu__box {
     visibility: visible;
     left: 0;
   }
@@ -142,7 +130,6 @@ a {
     top: 3px;
     margin-right: 10px;
 }
-
 /* Full-width input fields */
 input[type=text], input[type=password] {
     width: 100%;
@@ -213,15 +200,6 @@ img{
         color: #42df42;
         font-family:'Open Sans', sans-serif;
         font-size: 15px; 
-        
-    }
-    figure {
-        display:inline-block;
-        width: 80%;
-        text-align: center;
-
-    }
-    figure figcaption {
-    text-align:center ;
-    } 
+    }    
+    
     
