@@ -3,6 +3,8 @@ body {
 }
 a {
     background-color: white;
+    color: #066b1f;
+    text-decoration: none;
   }
 .one {
     background:#42df42;
