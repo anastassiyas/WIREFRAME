@@ -1,0 +1,80 @@
+body {
+    background-color: beige;
+}
+.flexbox-container {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+align-content: space-around;
+
+}
+
+.flexbox-item { 
+height: 250px;
+width: 380px;
+border: double rgb(69, 200, 233) 10px;
+
+}
+
+.flexone {
+flex-shrink: 0;
+}
+
+.flextwo {
+flex-grow: 1;
+}
+
+.flexthree {
+flex-shrink: 0;    
+}
+
+.containertwo {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+
+}
+
+.flexfour {
+flex-grow: 1;
+flex-shrink: 1;    
+}
+
+.flexfive {
+flex-grow: 1;
+flex-shrink: 1; 
+
+}
+.flexsix {
+    flex-grow: 1;
+    flex-shrink: 1;
+} 
+img {
+min-width: 100%;
+min-height: 100%;
+height: 250px;
+width: 380px;
+}
+.containerthree {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+align-content: space-around;
+}
+.flexseven {
+flex-grow: 1;
+flex-shrink: 1;    
+}
+    
+.flexeight {
+flex-grow: 1;
+flex-shrink: 1; 
+}
+
+.flexnine {
+flex-grow: 1;
+flex-shrink: 1; 
+}
