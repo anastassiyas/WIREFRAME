@@ -210,3 +210,38 @@ h4{
     iframe {
     border:seagreen;
     }   
+    .flexbox-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        
+        }
+        
+        .flexbox-item { 
+        height: 200px;
+        width: 340px;
+        border: dotted #42df42 10px;
+        
+        }
+        
+        .flexone {
+        flex-shrink: 0;
+        }
+        
+        .flextwo {
+        flex-grow: 0;
+        }
+        
+        .flexthree {
+        flex-shrink: 0;    
+        }
+        
+        .containertwo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+        }
